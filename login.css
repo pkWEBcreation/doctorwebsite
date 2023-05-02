@@ -1,0 +1,158 @@
+/* globel css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* main css start */
+
+
+.conteiner {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.conteiner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/login-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -99;
+    opacity: .7;
+}
+
+.login-box {
+    height: 80%;
+    min-width: 300px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+.login-box h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+
+.part1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15%;
+}
+
+.part1 label {
+    margin-top: 5px;
+    font-size: .7rem;
+}
+
+.part1 input {
+    height: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: .8rem;
+    border-bottom: 1px solid black;
+}
+
+.part1 input::placeholder {
+    font-size: .7rem;
+}
+
+.login-box p {
+    font-size: .6rem;
+    cursor: pointer;
+
+    margin: 7px 45px 0 auto;
+}
+p.Forgot:hover{
+    color: blue;
+}
+
+.login-btn {
+    margin-top: 30px;
+    text-transform: uppercase;
+    width: 70%;
+    height: 30px;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    transition: 1s;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.login-btn:hover{
+    transform: scale(1.1);
+}
+
+.part2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.part2 p{
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+}
+.icon{
+  
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.icon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+
+p.sign-line{
+   padding-top: 30px;
+}
+
+.sign-up-btn{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding-top: 7px;
+}
+
+.sign-up-btn:hover{
+    color: blue;
+}
